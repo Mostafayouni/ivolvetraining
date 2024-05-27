@@ -15,7 +15,7 @@ Lab 1
 
 and in the development only access to s3
 
-![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/742cef8f-7b04-4cfd-9526-07de7d7844ca)
+![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/cc009280-28a0-4a1d-8f46-5e861f60839e)
 
 
 create admin-1 user console access and mfa enabled in admin group
