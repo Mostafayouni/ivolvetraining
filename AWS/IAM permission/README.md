@@ -1,11 +1,21 @@
 Lab 1
 1
 - Billing Alarm
-2- Create 2 groups one admin and one for development • in the admin group it has admin permission.
+2- Create 2 groups one admin and one for development
+
+   • in the admin group it has admin permission.
+
 and in the development only access to s3
+
+
 create admin-1 user console access and mfa enabled in admin group
+
 and admin2-prog with cli access only
+
+
 and list all users and groups using commands not console
+
+
 •in the development group create user with name dev-user with programmatic and console access then try to access aws using it (take a screenshot from accessing ec2 and s3 console)
 
 ![aws1](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/f7807a19-0bdf-4727-a5ad-54dba0c1bc55)
