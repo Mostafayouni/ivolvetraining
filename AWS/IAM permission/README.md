@@ -36,7 +36,7 @@ and admin2-prog with cli access only
 and list all users and groups using commands not console
 
 
-![aws6](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/9199943b-fd45-40a0-ad7c-5d7316382451)
+![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/1dd73faf-051d-4ca9-afda-e0607bf638e8)
 
 
 
