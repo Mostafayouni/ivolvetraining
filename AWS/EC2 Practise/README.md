@@ -1,3 +1,10 @@
+![architecture](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/66cef5b1-4d52-4381-b581-33cd778f5418)
+
+
+
+
+
+
 Create a VPC (Virtual Private Cloud):
 
 
