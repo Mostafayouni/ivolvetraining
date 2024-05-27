@@ -8,13 +8,14 @@ Lab 1
 
 2- Create 2 groups one admin and one for development
 
-![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/76ee4282-a63c-4122-ab95-9c9e5dbe4632)
 
 
 
    • in the admin group it has admin permission.
 
 and in the development only access to s3
+
+![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/742cef8f-7b04-4cfd-9526-07de7d7844ca)
 
 
 create admin-1 user console access and mfa enabled in admin group
