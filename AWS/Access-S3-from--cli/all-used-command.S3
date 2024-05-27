@@ -1,5 +1,6 @@
 
 ```bash
+#!/bin/bash
 
 # Create S3 bucket
 aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
@@ -23,6 +24,16 @@ aws s3 cp s3://ivolve-training/main ~/downs3-ivolve
 
 # Enable versioning
 aws s3api put-bucket-versioning --bucket ivolve-training --versioning-configuration Status=Enabled
+
+# Enable logging
+aws s3api put-bucket-logging --bucket ivolve-training --bucket-logging-status file://logging.json
+```
+
+Replace `/path/to/local/file` with the actual path to the file you want to upload. Make sure to save this script as a `.sh` file (e.g., `s3_setup.sh`) and give it execute permissions using `chmod +x s3_setup.sh`.
+
+Also, ensure that you have a valid JSON file named `logging.json` with the logging configuration.
+
+When you run this script (`./s3_setup.sh`), it will execute each command sequentially, performing the specified actions to set up the S3 bucket, apply the bucket policy, upload and download files, enable versioning, and enable logging.ining --versioning-configuration Status=Enabled
 
 # Enable logging
 aws s3api put-bucket-logging --bucket ivolve-training --bucket-logging-status file://logging.json
