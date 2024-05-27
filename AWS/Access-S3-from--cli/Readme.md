@@ -1,4 +1,3 @@
-Sure, here's the content you provided formatted into a README file:
 
 ```markdown
 # iVolve Training S3 Bucket README
