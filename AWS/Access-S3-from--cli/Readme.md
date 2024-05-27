@@ -24,7 +24,6 @@ To create the iVolve Training S3 bucket, run the following command:
 aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
 ```
 
-Replace `/path/to/local/file` with the path to the file you want to upload and `ivolve-training` with your desired bucket name.
 
 ---
 
@@ -56,7 +55,7 @@ To upload files to the iVolve Training S3 bucket, run the following command:
 aws s3 cp /path/to/local/file s3://ivolve-training/
 ```
 
-Replace `/path/to/local/file` with the path to the file you want to upload.
+Replace `~/vimrc` with the path to the file you want to upload.
 
 ---
 
