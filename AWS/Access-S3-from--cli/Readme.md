@@ -24,3 +24,20 @@ aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bu
 
 
 
+Configure Bucket Policy
+
+To configure the bucket policy to allow public read access to objects in the bucket, run the following command:
+
+bash
+
+aws s3api put-bucket-policy --bucket ivolve-training --policy '{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Principal": "*",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::ivolve-training/*"
+  }]
+}'
+
+Replace ivolve-training with your bucket name.
