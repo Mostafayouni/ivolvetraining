@@ -1,3 +1,15 @@
+                       +-------------+
+                       | Load Balancer |
+                       +------+------+   
+                              |
+               +--------------+---------------+
+               |                              |
+          +----+----+                  +------+-----+
+          | Nginx   |                  |   Apache   |
+          | Instance|                  |  Instance  |
+          +---------+                  +-----------+
+
+
 Project steps :
 
     create Virtual private cloud (VPC). It will isolate our server from being accessed outside our network.
