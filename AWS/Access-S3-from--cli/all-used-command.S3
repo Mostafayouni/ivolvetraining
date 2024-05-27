@@ -1,6 +1,9 @@
-bash
-   aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
+#!/bin/bash
 
+# Create S3 bucket
+aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
+
+# Apply bucket policy
 aws s3api put-bucket-policy --bucket ivolve-training --policy '{
   "Version": "2012-10-17",
   "Statement": [{
@@ -11,19 +14,14 @@ aws s3api put-bucket-policy --bucket ivolve-training --policy '{
   }]
 }'
 
+# Upload file to bucket
 aws s3 cp /path/to/local/file s3://ivolve-training/
 
-aws s3 cp s3://ivolve-training/main  ~/downs3-ivolve
+# Download file from bucket
+aws s3 cp s3://ivolve-training/main ~/downs3-ivolve
 
+# Enable versioning
 aws s3api put-bucket-versioning --bucket ivolve-training --versioning-configuration Status=Enabled
 
+# Enable logging
 aws s3api put-bucket-logging --bucket ivolve-training --bucket-logging-status file://logging.json
-
-{
-  "LoggingEnabled": {
-    "TargetBucket": "your-logging-bucket-name",
-    "TargetPrefix": "logs/"
-  }
-}
-
-
