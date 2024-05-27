@@ -28,7 +28,7 @@ Configure Bucket Policy
 
 To configure the bucket policy to allow public read access to objects in the bucket, run the following command:
 
-   ```bash
+ ```bash
 
 
 aws s3api put-bucket-policy --bucket ivolve-training --policy '{
