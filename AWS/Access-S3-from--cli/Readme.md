@@ -19,8 +19,8 @@ This repository contains instructions for setting up and managing the iVolve Tra
 
 To create the iVolve Training S3 bucket, run the following command:
 
-```bash
-aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
+   ```bash
+       aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
 
 
 
