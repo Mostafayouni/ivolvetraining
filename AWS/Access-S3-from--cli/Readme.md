@@ -23,8 +23,9 @@ To create the iVolve Training S3 bucket, run the following command:
     aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
 
 
+---
 
-Configure Bucket Policy
+##Configure Bucket Policy
 
 To configure the bucket policy to allow public read access to objects in the bucket, run the following command:
 
