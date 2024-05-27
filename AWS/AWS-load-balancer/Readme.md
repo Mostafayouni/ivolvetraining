@@ -10,7 +10,7 @@
           +---------+                  +-----------+
 
 
- <h1>Project steps<h1> 
+ <h1>Project steps<h1> :
 
    1- create Virtual private cloud (VPC). It will isolate our server from being accessed outside our network.
 
