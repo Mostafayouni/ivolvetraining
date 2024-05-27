@@ -90,7 +90,7 @@ Create a JSON file named `logging.json` with the following content:
 ```json
 {
   "LoggingEnabled": {
-    "TargetBucket": "your-logging-bucket-name",
+    "TargetBucket": "ivolve-training",
     "TargetPrefix": "logs/"
   }
 }
@@ -106,4 +106,4 @@ Replace `your-logging-bucket-name` with the name of the bucket where you want to
 
 ```
 
-This README file provides instructions for setting up and managing the iVolve Training S3 bucket. You can save it as a markdown file (e.g., `README.md`) in your repository.
+This README file provides instructions for setting up and managing the iVolve Training S3 bucket.
