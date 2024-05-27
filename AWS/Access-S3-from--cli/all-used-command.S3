@@ -1,20 +1,5 @@
-It seems like you want to split the provided Bash script into four separate parts. Here are the four parts:
-
-**Part 1: Create S3 Bucket**
-
-```bash
-#!/bin/bash
-
-# Create S3 bucket
 aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
-```
 
-**Part 2: Apply Bucket Policy**
-
-```bash
-#!/bin/bash
-
-# Apply bucket policy
 aws s3api put-bucket-policy --bucket ivolve-training --policy '{
   "Version": "2012-10-17",
   "Statement": [{
@@ -24,30 +9,19 @@ aws s3api put-bucket-policy --bucket ivolve-training --policy '{
     "Resource": "arn:aws:s3:::ivolve-training/*"
   }]
 }'
-```
 
-**Part 3: Upload and Download Files**
-
-```bash
-#!/bin/bash
-
-# Upload file to bucket
 aws s3 cp /path/to/local/file s3://ivolve-training/
 
-# Download file from bucket
-aws s3 cp s3://ivolve-training/main ~/downs3-ivolve
-```
+aws s3 cp s3://ivolve-training/main  ~/downs3-ivolve
 
-**Part 4: Enable Versioning and Logging**
-
-```bash
-#!/bin/bash
-
-# Enable versioning
 aws s3api put-bucket-versioning --bucket ivolve-training --versioning-configuration Status=Enabled
 
-# Enable logging
 aws s3api put-bucket-logging --bucket ivolve-training --bucket-logging-status file://logging.json
-```
 
-Each part performs a specific set of actions related to setting up the S3 bucket. You can save each part as a separate `.sh` file and execute them individually as needed. Make sure to replace `/path/to/local/file` with the actual path to the file you want to upload and ensure that you have a valid JSON file named `logging.json` with the logging configuration.
+{
+  "LoggingEnabled": {
+    "TargetBucket": "ivolve-training",
+    "TargetPrefix": "logs/"
+  }
+}
+
