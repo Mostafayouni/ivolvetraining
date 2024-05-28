@@ -27,6 +27,7 @@ aws s3api put-public-access-block --bucket ivolve-training --public-access-block
 
 ```
 
+![1 (2)](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/55065b23-9ac1-4fb8-b29f-46a6ecfa50a7)
 
 ---
 
@@ -46,7 +47,7 @@ aws s3api put-bucket-policy --bucket ivolve-training --policy '{
 }'
 ```
 
-Replace `ivolve-training` with your bucket name.
+![2](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/f3e19cfb-828c-42a4-b5ff-8d02e35b90ec)
 
 ---
 
@@ -58,7 +59,7 @@ To upload files to the iVolve Training S3 bucket, run the following command:
 aws s3 cp ~/vimrc s3://ivolve-training/
 ```
 
-Replace `~/vimrc` with the path to the file you want to upload.
+![3](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/c05b4f85-a5b2-4760-bfff-bdb46499be2e)
 
 ---
 
@@ -119,3 +120,4 @@ Replace `your-logging-bucket-name` with the name of the bucket where you want to
 ```
 
 This README file provides instructions for setting up and managing the iVolve Training S3 bucket.
+![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/dfc0e80b-428b-404a-9dcb-530700b90a26)
