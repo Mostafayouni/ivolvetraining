@@ -71,7 +71,7 @@ To download files from the iVolve Training S3 bucket, run the following command:
 aws s3 cp s3://ivolve-training/main ~/downs3-ivolve
 ```
 
-Replace `main` with the name of the file you want to download.
+![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/c7cddb1f-2760-4835-b4ef-15e0b60db6d1)
 
 ---
 
