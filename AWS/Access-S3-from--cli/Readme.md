@@ -21,6 +21,9 @@ To create the iVolve Training S3 bucket, run the following command:
 
 ```bash
 aws s3api create-bucket --bucket ivolve-training --region eu-north-1 --create-bucket-configuration LocationConstraint=eu-north-1
+
+aws s3api put-public-access-block --bucket ivolve-training --public-access-block-configuration BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false
+
 ```
 
 
