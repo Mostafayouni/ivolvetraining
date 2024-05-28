@@ -51,7 +51,7 @@ Replace `ivolve-training` with your bucket name.
 To upload files to the iVolve Training S3 bucket, run the following command:
 
 ```bash
-aws s3 cp /path/to/local/file s3://ivolve-training/
+aws s3 cp ~/vimrc s3://ivolve-training/
 ```
 
 Replace `~/vimrc` with the path to the file you want to upload.
