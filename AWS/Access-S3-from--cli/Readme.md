@@ -118,6 +118,6 @@ aws s3api put-bucket-logging --bucket ivolve-training --bucket-logging-status fi
 Replace `your-logging-bucket-name` with the name of the bucket where you want to store logs.
 
 ```
+![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/dfc0e80b-428b-404a-9dcb-530700b90a26)
 
 This README file provides instructions for setting up and managing the iVolve Training S3 bucket.
-![4](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/dfc0e80b-428b-404a-9dcb-530700b90a26)
