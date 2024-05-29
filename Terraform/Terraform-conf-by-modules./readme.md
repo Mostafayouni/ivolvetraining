@@ -10,30 +10,43 @@ This Terraform project allows you to deploy a multi-tier infrastructure consisti
 .
 .
 ├── dev
-
+| |
 │ └── main.tf
-
+|
 ├── modules
-
-│ ├── ec2
-
-│ │ ├── main.tf
-
-│ │ ├── outputs.tf
-
-│ │ └── variables.tf
+|   |
+│   ├── ec2
+|   |
+│   │  ├── main.tf
+|
+│   │ ├── outputs.tf
+|
+│   │   └── variables.tf
+|
 │ ├── rds
+|
 │ │ ├── main.tf
+|
 │ │ ├── outputs.tf
+|
 │ │ └── variables.tf
+|
 │ └── vpc
+|
 │ ├── main.tf
+|
 │ ├── outputs.tf
+|
 │ └── variables.tf
+|
 ├── prod
+|
 │ └── main.tf
+|
 ├── README.md
+|
 └── terraform.tfstate
+
 ```
 
 - `dev/`: Contains the Terraform configuration for the development environment.
