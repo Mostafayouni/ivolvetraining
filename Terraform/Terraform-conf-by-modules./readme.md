@@ -10,11 +10,17 @@ This Terraform project allows you to deploy a multi-tier infrastructure consisti
 .
 .
 ├── dev
+
 │ └── main.tf
+
 ├── modules
+
 │ ├── ec2
+
 │ │ ├── main.tf
+
 │ │ ├── outputs.tf
+
 │ │ └── variables.tf
 │ ├── rds
 │ │ ├── main.tf
