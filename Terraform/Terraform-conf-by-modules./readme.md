@@ -12,6 +12,10 @@ This Terraform project allows you to deploy a multi-tier infrastructure consisti
 
 
 .
+Understood, let's reformat the file structure in a more readable way. Here it is:
+
+```
+.
 ├── dev
 │   └── main.tf
 ├── modules
@@ -31,6 +35,9 @@ This Terraform project allows you to deploy a multi-tier infrastructure consisti
 │   └── main.tf
 ├── README.md
 └── terraform.tfstate
+```
+
+This structure provides a clear hierarchy and separates the different components of your Terraform project into their respective directories. Let me know if you need further assistance!
 
 ```
 
