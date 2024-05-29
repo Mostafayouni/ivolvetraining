@@ -8,23 +8,24 @@ This Terraform project allows you to deploy a multi-tier infrastructure consisti
 
 ```
 .
+.
 ├── dev
-│   └── main.tf
+│ └── main.tf
 ├── modules
-│   ├── ec2
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   ├── rds
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   └── vpc
-│       ├── main.tf
-│       ├── outputs.tf
-│       └── variables.tf
+│ ├── ec2
+│ │ ├── main.tf
+│ │ ├── outputs.tf
+│ │ └── variables.tf
+│ ├── rds
+│ │ ├── main.tf
+│ │ ├── outputs.tf
+│ │ └── variables.tf
+│ └── vpc
+│ ├── main.tf
+│ ├── outputs.tf
+│ └── variables.tf
 ├── prod
-│   └── main.tf
+│ └── main.tf
 ├── README.md
 └── terraform.tfstate
 ```
