@@ -2,9 +2,8 @@ To create an attractive README for your project, you'll want to ensure it's well
 
 ---
 
-# Project Title
-
-Brief description of your project.
+#  Serverless Website using lambda , API gateway and DynamoDB
+Serverless websites use AWS Lambda for backend logic without managing servers. API Gateway creates RESTful APIs for interaction, and DynamoDB serves as a scalable NoSQL database.
 
 ## Table of Contents
 
