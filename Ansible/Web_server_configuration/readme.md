@@ -3,7 +3,7 @@
 
 # Ansible Web Server Configuration
 
-This Ansible playbook is used to configure web servers with Apache and Nginx.
+This Ansible playbook is used to configure web servers with Apache and Nginx and install Mysql
 
 ## Usage
 
