@@ -1,0 +1,37 @@
+---
+- name: Configure web server with Apache and Nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Apache web server
+      package:
+        name: httpd
+        state: present
+
+    - name: Ensure Apache service is running
+      service:
+        name: httpd
+        state: started
+        enabled: true
+
+    - name: Deploy sample website for Apache
+      copy:
+        src: /home/ansible/any.html
+        dest: /var/www/html
+      notify: restart apache
+
+    - name: Set proper file permissions for Apache website files
+      file:
+        path: /var/www/html
+        owner: apache
+        group: apache
+        mode: "0755"
+
+
+  handlers:
+    - name: restart apache
+      service:
+        name: httpd
+        state: restarted
+        enabled: true
