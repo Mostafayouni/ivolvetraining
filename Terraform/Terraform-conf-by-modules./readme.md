@@ -2,7 +2,9 @@
 ```markdown
 # Terraform Multi-Environment Infrastructure Deployment
 
-This Terraform project allows you to deploy a multi-tier infrastructure consisting of a VPC with EC2 instances and RDS databases in different environments (dev and prod). It uses Terraform modules for reusable infrastructure components.
+This Terraform project allows you to deploy a multi-tier infrastructure
+ consisting of a VPC with EC2 instances and RDS databases in different environments (dev and prod).
+It uses Terraform modules for reusable infrastructure components.
 
 ## Project Structure
 
