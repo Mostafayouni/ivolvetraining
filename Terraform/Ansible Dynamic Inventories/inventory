@@ -1,0 +1,4 @@
+# Generated Ansible inventory
+[test-app]
+3.91.68.29
+
