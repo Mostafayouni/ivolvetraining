@@ -49,10 +49,20 @@ Edit the `ec2.ini` file to set your AWS region and the IAM role ARN created earl
 
 Run the dynamic inventory script to ensure it's working properly:
 ```
-./ec2.py --list
+./dynamic_inv.py --list
 ```
+![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/9c475253-da2f-4330-950a-e752b52b643e)
+
 
 This command should output a JSON representation of your EC2 instances.
+
+## Run plabook
+      ansible-playbook playbook.yaml
+   bash
+
+![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/91ad81d3-bf17-432f-ac72-f56fd9bd5e40)
+
+
 
 ## SSH Verification
 
