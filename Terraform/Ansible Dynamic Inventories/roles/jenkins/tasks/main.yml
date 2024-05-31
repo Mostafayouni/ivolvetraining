@@ -1,9 +1,16 @@
 ---
 - name: Install required packages
   ansible.builtin.apt:
-    name: openjdk-17-jre
+    name: "{{ item }}"
     state: present
-
+  loop:
+    - openjdk-11-jre  # Jenkins requires Java
+    - git
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg
+    - lsb-release
 - name: add jenkins key 
   apt_key:  # ansible module to add key
     url:  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
