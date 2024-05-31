@@ -1,0 +1,43 @@
+---
+- name: Configure MySQL and Create Database
+  hosts: 192.168.8.104
+  become: yes
+  vars_files:
+    - secrets.yml
+  tasks:
+    - name: Install MySQL
+      package:
+        name: mysql-server
+        state: present
+
+    - name: Ensure MySQL is enabled and started
+      service:
+        name: mysqld
+        state: started
+        enabled: yes
+
+    - name: Create system user
+      user:
+        name: "{{ system_username }}"
+        password: "{{ system_user_password }}"
+        shell: /bin/bash
+
+    - name: Grant permissions to the system user to create database
+      mysql_user:
+        name: "{{ system_username }}"
+        password: "{{ mysql_root_password }}"
+        priv: "ivolvedatabase.*:SELECT,INSERT,UPDATE,DELETE"
+        host: "192.168.8.104"
+
+    - name: Create a database by the system user
+      mysql_db:
+        name: "{{ database_name }}"
+        login_user: "{{ system_username }}"
+        login_password: "{{ mysql_root_password }}"
+        state: present
+
+  vars:
+    system_username: ivolve
+    database_name: ivolvedatabase
+    mysql_root_password: "{{ vault_mysql_root_password }}"
+    system_user_password: "{{ vault_system_user_password }}"
