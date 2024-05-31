@@ -49,7 +49,7 @@ Edit the `ec2.ini` file to set your AWS region and the IAM role ARN created earl
 
 Run the dynamic inventory script to ensure it's working properly:
 ```
-./dynamic_inv.py --list
+./dynamic_inv.py 
 ```
 ![image](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/9c475253-da2f-4330-950a-e752b52b643e)
 
