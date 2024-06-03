@@ -77,6 +77,12 @@ kubectl get secret $(kubectl get sa my-service-account -n your-namespace -o json
 Replace `my-service-account` and `your-namespace` with the appropriate values.
 
 This command retrieves the secret associated with the ServiceAccount, extracts the token, and decodes it from base64 encoding.
+  kubectl get secrets -n your-namespace
+  kubectl auth can-i get secrets --as=system:serviceaccount:your-namespace:my-service-account -n your-namespace
+
+bash
+kubectl get secret my-secret -o yaml > my-secret.yaml
+
 
 Now you have the ServiceAccount token, which you can use for authentication when accessing the Kubernetes API on behalf of the ServiceAccount.
 
