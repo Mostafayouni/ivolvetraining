@@ -23,7 +23,7 @@ Replace `your-dockerhub-username` with your DockerHub username.
 
 
 ```bash
-kubectl apply -f deployment-service.yaml
+      kubectl apply -f deployment-service.yaml
 ```
 
 ### 3. Define Network Policy
