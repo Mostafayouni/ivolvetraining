@@ -1,6 +1,6 @@
 ### 1. Build Image and Push to DockerHub
 
-bash
+php
   # Clone the repository
   git clone https://github.com/IbrahimmAdel/static-website.git
 
@@ -12,7 +12,7 @@ bash
 
   # Push the Docker image to DockerHub
   docker push your-dockerhub-username/static-website
-bash
+php
 
 Replace `your-dockerhub-username` with your DockerHub username.
 
