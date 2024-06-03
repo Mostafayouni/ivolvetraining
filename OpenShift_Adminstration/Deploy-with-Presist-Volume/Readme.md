@@ -68,6 +68,11 @@ Apply the updated deployment:
 kubectl apply -f nginx-deployment.yaml
 ```
 
+![final2](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/f149c58d-0364-45c2-937a-47032c18b77a)
+
 9. **Repeat Previous Steps and Verify File Persists Across Pod Deletions**:
 
 Repeat steps 2 to 6, and you should see that the file persists even after deleting the pod.
+![final](https://github.com/Mostafayouni/ivolvetraining/assets/105316729/c76b3cf0-3faa-4324-957a-4186a9432a9d)
+
+
