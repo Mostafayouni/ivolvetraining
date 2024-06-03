@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nginx-deploy
+  labels:
+    name: nginx-deploy
+    type: frontend
+spec:  
+  replicas: 3
+  selector:
+    matchLabels:
+      type: frontend
+  template:
+    metadata:
+      name: nginx-deploy
+      labels:
+        app: nginx-deploy
+        type: frontend
+    spec:
+      containers:
+        - name: nginx-deploy
+          image: httpd
+          ports:
+            - containerPort: 80
