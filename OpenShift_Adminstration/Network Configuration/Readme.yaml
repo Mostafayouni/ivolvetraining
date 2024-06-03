@@ -1,19 +1,18 @@
-Let's break down the tasks step by step:
 
 ### 1. Build Image and Push to DockerHub
 
 ```bash
-# Clone the repository
-git clone https://github.com/IbrahimmAdel/static-website.git
+      # Clone the repository
+       git clone https://github.com/IbrahimmAdel/static-website.git
 
-# Navigate to the repository directory
-cd static-website
+        # Navigate to the repository directory
+         cd static-website
 
-# Build the Docker image
-docker build -t your-dockerhub-username/static-website .
+        # Build the Docker image
+          docker build -t your-dockerhub-username/static-website .
 
-# Push the Docker image to DockerHub
-docker push your-dockerhub-username/static-website
+        # Push the Docker image to DockerHub
+        docker push your-dockerhub-username/static-website
 ```
 
 Replace `your-dockerhub-username` with your DockerHub username.
@@ -22,40 +21,6 @@ Replace `your-dockerhub-username` with your DockerHub username.
 
 Here's an example YAML for the deployment and service:
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: custom-nginx
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: custom-nginx
-  template:
-    metadata:
-      labels:
-        app: custom-nginx
-    spec:
-      containers:
-      - name: custom-nginx
-        image: your-dockerhub-username/static-website
-        ports:
-        - containerPort: 80
-
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: custom-nginx
-spec:
-  selector:
-    app: custom-nginx
-  ports:
-    - protocol: TCP
-      port: 80
-```
 
 Apply the YAML:
 
@@ -67,20 +32,6 @@ kubectl apply -f deployment-service.yaml
 
 Here's an example YAML for the network policy:
 
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  name: allow-nginx
-spec:
-  podSelector:
-    matchLabels:
-      app: custom-nginx
-  policyTypes:
-  - Ingress
-  ingress:
-  - from:
-    - podSelector: {}
 ```
 
 Apply the network policy:
@@ -101,24 +52,7 @@ minikube addons enable ingress
 
 Here's an example YAML for the Ingress resource:
 
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: custom-nginx-ingress
-spec:
-  rules:
-  - host: your-domain.com
-    http:
-      paths:
-      - pathType: Prefix
-        path: /
-        backend:
-          service:
-            name: custom-nginx
-            port:
-              number: 80
-```
+
 
 Apply the Ingress resource:
 
