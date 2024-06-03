@@ -14,7 +14,7 @@ bash
     docker push your-dockerhub-username/static-website
 bash
 
-Replace `your-dockerhub-username` with your DockerHub username.
+
 
 ### 2. Create Deployment and Service
 
