@@ -18,11 +18,9 @@ Replace `your-dockerhub-username` with your DockerHub username.
 
 ### 2. Create Deployment and Service
 
-Here's an example YAML for the deployment and service:
 
 
 
-Apply the YAML:
 
 ```bash
 kubectl apply -f deployment-service.yaml
