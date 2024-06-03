@@ -1,18 +1,17 @@
-
 ### 1. Build Image and Push to DockerHub
 
 ```bash
-      # Clone the repository
-       git clone https://github.com/IbrahimmAdel/static-website.git
+# Clone the repository
+git clone https://github.com/IbrahimmAdel/static-website.git
 
-        # Navigate to the repository directory
-         cd static-website
+# Navigate to the repository directory
+cd static-website
 
-        # Build the Docker image
-          docker build -t your-dockerhub-username/static-website .
+# Build the Docker image
+docker build -t your-dockerhub-username/static-website .
 
-        # Push the Docker image to DockerHub
-        docker push your-dockerhub-username/static-website
+# Push the Docker image to DockerHub
+docker push your-dockerhub-username/static-website
 ```
 
 Replace `your-dockerhub-username` with your DockerHub username.
@@ -22,6 +21,8 @@ Replace `your-dockerhub-username` with your DockerHub username.
 Here's an example YAML for the deployment and service:
 
 
+```
+
 Apply the YAML:
 
 ```bash
@@ -29,8 +30,6 @@ kubectl apply -f deployment-service.yaml
 ```
 
 ### 3. Define Network Policy
-
-Here's an example YAML for the network policy:
 
 ```
 
@@ -53,6 +52,7 @@ minikube addons enable ingress
 Here's an example YAML for the Ingress resource:
 
 
+```
 
 Apply the Ingress resource:
 
@@ -73,5 +73,3 @@ Replace `<minikube-ip>` with the IP address of Minikube.
 ### 7. Access the Custom NGINX Service
 
 Now, you should be able to access your custom NGINX service via the Ingress endpoint using the domain name `your-domain.com`.
-
-
