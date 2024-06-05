@@ -15,7 +15,7 @@ This repository contains a Helm chart to deploy NGINX server on Kubernetes using
 1. Clone this repository:
 
     ```bash
-    $ git clone https://github.com/your_username/nginx-chart.git
+    $ git clone https://github.com/mostafayouni/nginx-chart.git
     ```
 
 2. Navigate to the repository directory:
