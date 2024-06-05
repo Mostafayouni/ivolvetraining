@@ -1,4 +1,4 @@
-**Lab7: Multi-container Applications**
+<h1> Multi-container Applications</h1>
 
 **Objective:** 
 Create a deployment for Jenkins with an init container that sleeps for 10 seconds before the Jenkins container starts. Utilize readiness and liveness probes to monitor Jenkins. Establish a NodePort service to expose Jenkins. Verify the successful execution of the init container and initialization of Jenkins.
