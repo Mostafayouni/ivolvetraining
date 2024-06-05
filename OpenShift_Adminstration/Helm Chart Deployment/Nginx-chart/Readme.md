@@ -39,6 +39,7 @@ To access the NGINX server, run the following command:
 ```bash
 $ minikube service nginx-release --url
 ```
+https://github.com/AliKhamed/ivolve_labs/blob/main/oc/lab8/screenshots/lab8.4.png
 
 ## Deleting NGINX Release
 
