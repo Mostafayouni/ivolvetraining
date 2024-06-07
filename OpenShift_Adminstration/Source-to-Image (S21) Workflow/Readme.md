@@ -125,4 +125,3 @@ oc delete all -l app=my-html-app -n <your-namespace>
 This README provided steps to deploy an HTML application on OpenShift using both the `oc` CLI and the OpenShift Console. Follow these instructions to successfully create, build, and expose your application.
 ```
 
-Feel free to customize the `README.md` file further based on your specific requirements and environment setup.
